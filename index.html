@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>timer</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="text-block">Simple timer</div>
+	<div class="container">
+		<div class="buttons-block">
+				<button id="button-start" class="button-start" onclick="toggleStartTime()">Start</button>
+				<button id="button-min-up" onclick="oneMinUp()">+ 1 min</button>
+				<div id="max-min">
+					<button id="button-min-down" onclick="oneMinDown()">- 1 min</button>
+					<div id="max-min-popup">MAX!</div>
+				</div>
+				<button id="button-back-start" onclick="backStart()">Back start</button>
+				<button id="button-reset" onclick="resetStartTime()">Reset</button>
+		</div>
+
+		<div class="timer">
+			<span id="minutes">00</span><span>:</span><span id="seconds">00</span>
+			<div id="timer-animation"></div>
+		</div>
+	</div>
+
+</body>
+</html>
